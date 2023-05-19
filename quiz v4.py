@@ -35,16 +35,17 @@ for q, a in qa.items():
        print (o)
    q_num += 1
    ans = input('Enter your answer: ')
-   while ans.lower() not in ['a', 'b', 'c', 'd','e']:
+   while ans.lower() not in ['a', 'b', 'c', 'd','e','A','B','C','D','E']:
       print("Your answer can only be a,b,c,d or e.")
       ans = input('Enter your answer: ')
-   if ans == a:
+   if ans.lower() == a:
       print ('Correct')
       score += 1
    else:
       print ('Incorrect') 
       print('Correct answer is --> ',a)
    print('Your score: ', score)
+
 
 print ('--------------------Total score--------------------')
 print(user_name,', Your score: ', score)
