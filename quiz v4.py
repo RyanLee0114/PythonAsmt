@@ -35,7 +35,7 @@ for q, a in qa.items():
        print (o)
    q_num += 1
    ans = input('Enter your answer: ')
-   while ans.lower() not in ['a', 'b', 'c', 'd','e','A','B','C','D','E']:
+   while ans.lower() not in ['a', 'b', 'c', 'd','e']:
       print("Your answer can only be a,b,c,d or e.")
       ans = input('Enter your answer: ')
    if ans.lower() == a:
