@@ -2,13 +2,13 @@
 qa = {
     'What is 2 x 5?': 'e',
     'What is - 15 + 15?': 'c',
-    'What is 253 x 34?': 'b',
+    'What is 253 x 34?': 'e',
     'What is 250 x 4?': 'b',
     'What is 76 x 6 - 24?': 'a',
-    'What is 7291 + 8830?': 'c',
+    'What is 7291 + 8830?': 'a',
     'What is 3 + 23?': 'd',
-    'What is 372910/5?': 'b',
-    'What is 761 x 28?': 'e',
+    'What is 372910/5?': 'c',
+    'What is 761 x 28?': 'b',
     'What is -45 + 55?': 'a'
 }
 
@@ -30,6 +30,14 @@ score = 0
 q_num = 0
 user_name = input('Enter your name: ')
 user_answers = []  
+
+# Prompt the user for their age and check eligibility.
+age = int(input('Enter your age : '))
+if age >=10 and age <=18:
+    print('you are eligible to play')
+else:
+    print('you are not eligible to play.')
+    exit ()
 
 # Iterate through each question and present it to the user.
 for q, a in qa.items():
